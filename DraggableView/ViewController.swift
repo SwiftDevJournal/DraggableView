@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         
         if let viewToDrag = sender.view {
             viewToDrag.center = CGPoint(x: viewToDrag.center.x + translation.x, y: viewToDrag.center.y + translation.y)
-            viewToDrag.center = CGPoint(x: viewToDrag.center.x + translation.x, y: viewToDrag.center.y + translation.y)
             sender.setTranslation(CGPoint(x: 0, y: 0), in: viewToDrag)
         }
     }
