@@ -27,6 +27,15 @@
                                     <outletCollection property="gestureRecognizers" destination="7di-so-LVt" appends="YES" id="Cqw-Vf-6mm"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htS-w4-9M6">
+                                <rect key="frame" x="99" y="378" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="JMY-Z6-JPe" appends="YES" id="2dE-OA-loA"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -36,6 +45,11 @@
                 <panGestureRecognizer minimumNumberOfTouches="1" id="7di-so-LVt">
                     <connections>
                         <action selector="panView:" destination="BYZ-38-t0r" id="fZs-6J-heB"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="JMY-Z6-JPe">
+                    <connections>
+                        <action selector="panView:" destination="BYZ-38-t0r" id="xyU-Pu-TVV"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
